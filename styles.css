@@ -99,7 +99,7 @@ body {
   }
   .current {
     font-family: "Courier New", Courier, monospace;
-    width: 15px;
+    width: auto;
     background: #8f8b8b;
     border-bottom: 2px inset rgba(0, 0, 0, 0.5);
     border-left: 2px inset rgba(0, 0, 0, 0.5);
@@ -112,6 +112,6 @@ body {
     font-size: 12px;
     margin: 10px;
     text-align: center;
-    padding: 10px 16px;
+    
   }
   
