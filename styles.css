@@ -40,7 +40,7 @@ body {
     margin-right:6px;
   }
   .col{
-    column-gap: 10px;
+    grid-column-gap: 5px;
   }
   .card-title {
     color: #ffffff;
