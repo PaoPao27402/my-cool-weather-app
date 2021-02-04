@@ -50,6 +50,7 @@ body {
   }
   .row {
     text-align: center;
+    grid-auto-columns: auto;
   }
   section {
     background-image: url("https://i.pinimg.com/originals/9b/7a/48/9b7a4870dc58773ae79f4a81cdef41b0.gif");
