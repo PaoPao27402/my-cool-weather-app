@@ -36,8 +36,7 @@ body {
     text-align: center;
     border-radius: 8px;
     margin-bottom: 40px;
-    margin-left: 6px;
-    margin-right:6px;
+    margin: auto;
     padding:0.5px;
   }
   .card-title {
