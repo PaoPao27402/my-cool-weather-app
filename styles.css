@@ -51,7 +51,6 @@ body {
   .row {
     text-align: center;
     margin: 2px;
-    column-gap: 1.5em;
   }
   section {
     background-image: url("https://i.pinimg.com/originals/9b/7a/48/9b7a4870dc58773ae79f4a81cdef41b0.gif");
