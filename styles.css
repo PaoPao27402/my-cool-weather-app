@@ -36,8 +36,8 @@ body {
     border-radius: 8px;
     margin-bottom: 45px;
     padding:1px;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left:  0 1rem;
+    margin-right: 0 1rem;
   }
   .card-title {
     color: #ffffff;
