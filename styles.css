@@ -49,6 +49,7 @@ body {
   }
   .row {
     text-align: center;
+    display: flex;
     row-gap: 5px;
   }
   section {
