@@ -33,13 +33,9 @@ body {
     margin-bottom: 8px;
   }
   .card {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: var(--column-gap);
-    column-gap: var(--column-gap);
     border-radius: 8px;
     margin-bottom: 40px;
-    padding:0;
+    padding:2rem;
     margin:0;
     
   }
