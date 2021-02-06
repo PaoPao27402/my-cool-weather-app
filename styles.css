@@ -38,7 +38,6 @@ body {
     margin-bottom: 40px;
     margin-left: 6px;
     margin-right:6px;
-    padding: 0%;
   }
   .card-title {
     color: #ffffff;
@@ -51,6 +50,7 @@ body {
   }
   .row {
     text-align: center;
+    --bs-gutter-x: 1px;
   }
   section {
     background-image: url("https://i.pinimg.com/originals/9b/7a/48/9b7a4870dc58773ae79f4a81cdef41b0.gif");
