@@ -38,8 +38,7 @@ body {
     padding:1px;
     margin-left: 6px;
     margin-right: 6px;
-    --bs-gutter-x: 0;
-    --bs-gutter-y: 0;
+    grid-row: column 2px; ;
   }
   .card-title {
     color: #ffffff;
