@@ -129,6 +129,9 @@ body {
     color: #ffffff;
     text-decoration: none;
   }
+  .weak:hover{
+    color: #a346ce;
+  }
 
 
   
