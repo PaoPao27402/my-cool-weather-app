@@ -116,3 +116,10 @@ body {
     
   }
   
+  .active{
+    cursor: default;
+  color: #ffffff;
+
+  }
+
+  
