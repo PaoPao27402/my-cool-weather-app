@@ -119,7 +119,10 @@ body {
   .active{
     cursor: default;
   color: #ffffff;
-
+  }
+  .active:hover {
+    text-decoration: none;
+    color: #2ce2e1;
   }
 
   
