@@ -115,6 +115,7 @@ function search(event) {
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", search);
 
+// celsius to fahrenheit conversion
 function convertToFahrenheitLink(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
@@ -125,3 +126,13 @@ function convertToFahrenheitLink(event) {
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", convertToFahrenheitLink);
 
+// fahrenheit to celsius
+function convertCelsiusLink(event){
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
+let celsiusLink = null
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", convertCelsiusLink);
