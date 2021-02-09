@@ -127,12 +127,12 @@ let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", convertToFahrenheitLink);
 
 // fahrenheit to celsius
-function convertCelsiusLink(event){
+function convertToCelsiusLink(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
-let celsiusLink = null
+let celsiusTemperature = null;
 
 let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", convertCelsiusLink);
+celsiusLink.addEventListener("click", convertToCelsiusLink);
