@@ -81,7 +81,7 @@ function showWeather(response) {
  } else if (response.data.weather[0].icon === "50n") {
    iconElement.setAttribute("class", "fas fa-stream");
  }   
-
+ celsiusTemperature = Math.round(response.data.main.temp);
 }
 
 function searchLocation(position) {
