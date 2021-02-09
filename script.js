@@ -119,6 +119,7 @@ searchForm.addEventListener("submit", search);
 function convertToFahrenheitLink(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
+
   let temperature = temperatureElement.innerHTML;
   temperatureElement.innerHTML = (temperature * 9) / 5 + 32;
 }
@@ -126,7 +127,7 @@ function convertToFahrenheitLink(event) {
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", convertToFahrenheitLink);
 
-// fahrenheit to celsius
+// celsius
 function convertToCelsiusLink(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
