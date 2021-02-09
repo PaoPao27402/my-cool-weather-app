@@ -44,6 +44,44 @@ function showWeather(response) {
   );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
+
+ //icon
+ let iconElement = document.querySelector("#main-icon");
+ if (
+   response.data.weather[0].icon === "03d" ||
+   response.data.weather[0].icon === "03n"
+ ) {
+   iconElement.setAttribute("class", "fas fa-cloud");
+ } else if (response.data.weather[0].icon === "04d") {
+   iconElement.setAttribute("class", "fas fa-cloud");
+ } else if (response.data.weather[0].icon === "04n") {
+   iconElement.setAttribute("class", "fas fa-cloud");
+ } else if (response.data.weather[0].icon === "01d") {
+   iconElement.setAttribute("class", "fas fa-sun");
+ } else if (response.data.weather[0].icon === "01n") {
+   iconElement.setAttribute("class", "fas fa-moon");
+ } else if (response.data.weather[0].icon === "02d") {
+   iconElement.setAttribute("class", "fas fa-cloud-sun");
+ } else if (response.data.weather[0].icon === "02n") {
+   iconElement.setAttribute("class", "fas fa-cloud-moon");
+ } else if (response.data.weather[0].icon === "09d") {
+   iconElement.setAttribute("class", "fas fa-cloud-showers-heavy");
+ } else if (response.data.weather[0].icon === "09n") {
+   iconElement.setAttribute("class", "fas fa-cloud-showers-heavy");
+ } else if (response.data.weather[0].icon === "10d") {
+   iconElement.setAttribute("class", "fas fa-cloud-rain");
+ } else if (response.data.weather[0].icon === "10n") {
+   iconElement.setAttribute("class", "fas fa-cloud-rain");
+ } else if (response.data.weather[0].icon === "13d") {
+   iconElement.setAttribute("class", "far fa-snowflake");
+ } else if (response.data.weather[0].icon === "13n") {
+   iconElement.setAttribute("class", "far fa-snowflake");
+ } else if (response.data.weather[0].icon === "50d") {
+   iconElement.setAttribute("class", "fas fa-stream");
+ } else if (response.data.weather[0].icon === "50n") {
+   iconElement.setAttribute("class", "fas fa-stream");
+ }   
+
 }
 
 function searchLocation(position) {
@@ -87,4 +125,3 @@ function convertToFahrenheitLink(event) {
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", convertToFahrenheitLink);
 
-//search
