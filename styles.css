@@ -117,13 +117,17 @@ body {
   }
   
   .active{
-    cursor: default;
   color: #ffffff;
-  cursor: default;
+  cursor: pointer;
   text-decoration: none;
   }
   .active:hover {
     color: #a346ce;
+  }
+
+  .fahrenheit-link{
+    color: #ffffff;
+    text-decoration: none;
   }
 
 
