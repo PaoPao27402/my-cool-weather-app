@@ -100,6 +100,13 @@ function getCurrentLocation(event) {
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
+
+function displayForecast(response){
+  console.log(response.data);
+}
+
+
+
 function search(event) {
   event.preventDefault();
   let cityElement = document.querySelector("#city");
@@ -110,6 +117,9 @@ function search(event) {
   let city = document.querySelector("#city-input").value;
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
   axios.get(apiUrl).then(showWeather);
+
+  apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city},us&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
 }
 
 let searchForm = document.querySelector("#search-form");
