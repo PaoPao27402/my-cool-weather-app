@@ -37,6 +37,9 @@ body {
     margin:0 auto;
     text-align: center;
   }
+  .col-3{
+    column-gap: 0;
+  }
   .card-body{
     margin: 0 auto;
     padding-left: 2px;
