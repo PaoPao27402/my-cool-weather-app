@@ -32,6 +32,11 @@ body {
     font-size: 30px;
     margin-bottom: 8px;
   }
+  .weather-icon{
+    display: block;
+    margin: 0 auto;
+    width: 25%;
+  }
   
   .card {
     text-align: center;
