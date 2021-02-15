@@ -36,6 +36,9 @@ body {
     display: block;
     margin:0 auto;
   }
+  .card text-center{
+    margin: 2px;
+  }
   .card-title {
     color: #ffffff;
     font-family: "Courier New", Courier, monospace;
