@@ -5,7 +5,6 @@ body {
     color: #ffffff;
     font-family: "Courier New", Courier, monospace;
     text-align: center;
-    text-shadow: #eceaea;
   }
   .time {
     color: #ffffff;
@@ -16,7 +15,7 @@ body {
   }
   .temperature {
     color: #ffffff;
-    font-size: 55px;
+    font-size: 85px;
     font-family: "Courier New", Courier, monospace;
   }
   .units,
