@@ -32,10 +32,7 @@ body {
     font-size: 30px;
     margin-bottom: 8px;
   }
-  .col-3{
-    width: 20%;
-  }
-
+  
   .card {
     text-align: center;
     border-radius: 8px;
