@@ -32,6 +32,9 @@ body {
     font-size: 30px;
     margin-bottom: 8px;
   }
+  .col-3{
+    column-gap: 2px;
+  }
 
   .card {
     text-align: center;
