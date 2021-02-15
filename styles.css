@@ -33,7 +33,7 @@ body {
     margin-bottom: 8px;
   }
   .card-body{
-    padding: 2px;
+  margin: 2px;
   }
   .card {
     text-align: center;
