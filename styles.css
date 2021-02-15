@@ -37,7 +37,10 @@ body {
     margin:0 auto;
     text-align: center;
   }
-  
+  .card-body{
+    margin: 0 auto;
+
+  }
   .card-title {
     color: #ffffff;
     font-family: "Courier New", Courier, monospace;
