@@ -10,7 +10,7 @@ body {
   }
   .time {
     color: #ffffff;
-    text-shadow: 1px 1px rgba(0, 0, 0.2);
+    text-shadow: 1px 1px rgb(165, 164, 164);
     font-family: "Courier New", Courier, monospace;
     text-align: center;
     margin-top: 0;
