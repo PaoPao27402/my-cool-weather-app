@@ -38,10 +38,7 @@ body {
     padding-right: 1px;
     text-align: center;
   }
-  .card-body{
-    width: 100%;
-    border-radius: 5px;
-  }
+  
   .card-title {
     color: #ffffff;
     font-family: "Courier New", Courier, monospace;
