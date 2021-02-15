@@ -8,6 +8,9 @@ body {
     font-family: "Courier New", Courier, monospace;
     text-align: center;
   }
+  .todaydata{
+    text-shadow: 1px 1px rgba(0, 0, 0.2);
+  }
   .time {
     color: #ffffff;
     font-family: "Courier New", Courier, monospace;
