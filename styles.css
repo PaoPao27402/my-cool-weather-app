@@ -39,6 +39,7 @@ body {
     text-align: center;
   }
   .card-body{
+    width: 100%;
     border-radius: 8px;
     margin-left: 7px;
   }
