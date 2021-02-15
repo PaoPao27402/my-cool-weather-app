@@ -38,6 +38,7 @@ body {
   }
   .card{
     margin-left:7px;
+    margin-right: 7px;
   }
   .card-title {
     color: #ffffff;
