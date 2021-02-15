@@ -102,7 +102,8 @@ currentLocationButton.addEventListener("click", getCurrentLocation);
 
 //forecast 
 function displayForecast(response){
-  console.log(response.data);
+  let forecastElement = document.querySelector("#forecast");
+  console.log(response.data.list[0]);
 }
 
 
