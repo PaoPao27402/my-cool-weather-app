@@ -34,8 +34,8 @@ body {
   }
   .weather-icon{
     display: block;
-    margin-right: 1px;
-    margin-left: 1px;
+    margin:0 auto;
+    padding-right: 1px;
     text-align: center;
   }
   .col-3{
