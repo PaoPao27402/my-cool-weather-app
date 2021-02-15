@@ -54,10 +54,7 @@ body {
     font-size: 15px;
     color: #ffffff;
   }
-  .row {
-    text-align: center;
-    right: gap 1.5em;
-  }
+
   section {
     background-image: url("https://i.pinimg.com/originals/9b/7a/48/9b7a4870dc58773ae79f4a81cdef41b0.gif");
     margin: 0 auto;
