@@ -2,6 +2,8 @@ body {
     text-align: center;
   }
   h1 {
+    font-size: 45px;
+    text-shadow: 1px 1px rgba(0, 0, 0.2);
     color: #ffffff;
     font-family: "Courier New", Courier, monospace;
     text-align: center;
