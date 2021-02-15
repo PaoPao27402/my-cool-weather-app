@@ -38,7 +38,9 @@ body {
     padding-right: 1px;
     text-align: center;
   }
-  
+  .card-body{
+    border-radius: 8px;
+  }
   .card-title {
     color: #ffffff;
     font-family: "Courier New", Courier, monospace;
