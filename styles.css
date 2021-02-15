@@ -36,7 +36,7 @@ body {
     display: block;
     margin:0 auto;
   }
-  .card text-center{
+  .card.text-center{
     margin: 2px;
   }
   .card-title {
