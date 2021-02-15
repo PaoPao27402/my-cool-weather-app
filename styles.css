@@ -17,7 +17,9 @@ body {
     color: #ffffff;
     font-size: 85px;
     font-family: "Courier New", Courier, monospace;
-    text-shadow: 2px 4px rgba(0, 0, 0.2);
+  }
+  .main-icon{
+    text-shadow:2px 4px rgba(0, 0, 0, 0.10);
   }
   .units,
   .fahrenheit-link {
