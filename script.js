@@ -104,14 +104,15 @@ currentLocationButton.addEventListener("click", getCurrentLocation);
 function displayForecast(response){
 
   let forecastElement = document.querySelector("#forecast");
-console.log(response.data.list[0]);
+console.log(forecast);
+let forecast = response.data.list[0];
 forecastElement.innerHTML = `<div class="col-3">
                 
 <div class="card-body" style="background-color: rgba(239, 248, 254, 0.08);">
   <h4 class="card-title"id="day-two">Fr</h4>
   <h5 class="weather-icon">
     <i class="fas fa-cloud-sun"></i></h5>
-  <p class="temp-day-two">0°C</p>
+  <p class="temp-day-two">${forecast.main.temp_max}°C</p>
 </div>
 </div>`;
 
