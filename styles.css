@@ -41,7 +41,7 @@ body {
     column-gap: 0;
   }
   .card-body{
-    margin: 0 auto;
+    margin: 1 auto;
   }
   .card-title {
     color: #ffffff;
