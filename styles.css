@@ -40,6 +40,9 @@ body {
     margin-left:7px;
     margin-right: 7px;
   }
+  .card-body{
+    padding: 0;
+  }
   .card-title {
     color: #ffffff;
     font-family: "Courier New", Courier, monospace;
