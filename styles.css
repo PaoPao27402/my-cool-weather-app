@@ -41,6 +41,7 @@ body {
     column-gap: 0;
   }
   .card-body{
+    border: #ffffff;
     margin: 0 auto;
   }
   .card-title {
