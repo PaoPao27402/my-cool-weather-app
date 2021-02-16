@@ -116,7 +116,7 @@ forecastElement.innerHTML =
 </div>
 </div>`;
 
-let forecast = response.data.list[0];
+let forecast = response.data.list[1];
 forecastElement.innerHTML += 
 `<div class="col-3">
                 
