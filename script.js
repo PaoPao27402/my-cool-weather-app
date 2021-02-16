@@ -35,7 +35,6 @@ horas.innerHTML = `${day} ${month} ${date} ${year} ${hour}:${minutes}`;
 
 ///hours for the forecast
 function formatHours(myHoras){
-  let date = myHoras.getDate();
   let hour = myHoras.getHours();
 if (hour < 10) {
   hour = `0${hour}`;
@@ -181,4 +180,4 @@ let celsiusTemperature = null;
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", convertToCelsiusLink);
-}
+
