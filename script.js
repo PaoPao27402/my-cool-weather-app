@@ -32,6 +32,21 @@ let months = [
 let month = months[myHoras.getMonth()];
 horas.innerHTML = `${day} ${month} ${date} ${year} ${hour}:${minutes}`;
 
+
+///hours for the forecast
+function formatHours(myHoras){
+  let date = myHoras.getDate();
+  let hour = myHoras.getHours();
+if (hour < 10) {
+  hour = `0${hour}`;
+}
+let minutes = myHoras.getMinutes();
+if (hour < 10) {
+  hour = `0${minutes}`;
+
+  return `${hours}:${minutes}`;
+}
+
 function showWeather(response) {
   console.log(response.data);
   document.querySelector("#city").innerHTML = response.data.name;
@@ -113,7 +128,7 @@ forecastElement.innerHTML +=
  `<div class="col-3">
                 
 <div class="card-body">
-<h4 class="card-title"id="day-one">00:00</h4>
+<h4 class="card-title"id="day-one">${formatHours(forecast.dt * 1000)}</h4>
   <h5 class="weather-icon">
   <i class="fas fa-cloud"></i></h5>
   <p class="temp-day-one">${Math.round(forecast.main.temp_max)}°C</p>
@@ -166,3 +181,4 @@ let celsiusTemperature = null;
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", convertToCelsiusLink);
+}
