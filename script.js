@@ -103,9 +103,12 @@ currentLocationButton.addEventListener("click", getCurrentLocation);
 //forecast 
 function displayForecast(response){
 let forecastElement = document.querySelector("#forecast");
-let forecast = response.data.list[0];
+let forecast = null;
 console.log(forecast);
-forecastElement.innerHTML =
+
+for (let index = 0; index < 4; index++){
+let forecast = response.data.list[index];
+forecastElement.innerHTML +=
  `<div class="col-3">
                 
 <div class="card-body" style="background-color: rgba(239, 248, 254, 0.08);">
@@ -114,19 +117,9 @@ forecastElement.innerHTML =
   <i class="fas fa-cloud"></i></h5>
   <p class="temp-day-one">${Math.round(forecast.main.temp_max)}°C</p>
 </div>
-</div>`;
-
-let forecast = response.data.list[1];
-forecastElement.innerHTML += 
-`<div class="col-3">
-                
-<div class="card-body">
-  <h4 class="card-title"id="day-two">Fr</h4>
-  <h5 class="weather-icon">
-    <i class="fas fa-cloud-sun"></i></h5>
-  <p class="temp-day-two">${Math.round(forecast.main.temp_max)}°C</p>
-</div>
-</div>`;
+</div>`;  
+  
+ }
 
 }
 
