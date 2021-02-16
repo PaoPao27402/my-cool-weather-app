@@ -106,7 +106,7 @@ let forecastElement = document.querySelector("#forecast");
 let forecast = null;
 console.log(forecast);
 
-for (let index = 0; index < 4; index++){
+for (let index = 0; index < 3; index++){
 let forecast = response.data.list[index];
 forecastElement.innerHTML +=
  `<div class="col-3">
