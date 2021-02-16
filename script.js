@@ -112,8 +112,8 @@ let forecast = response.data.list[index];
 forecastElement.innerHTML +=
  `<div class="col-3">
                 
-<div class="card-body" style="background-color: rgba(239, 248, 254, 0.08);">
-<h4 class="card-title"id="day-one">Thu</h4>
+<div class="card-body">
+<h4 class="card-title"id="day-one">00:00</h4>
   <h5 class="weather-icon">
   <i class="fas fa-cloud"></i></h5>
   <p class="temp-day-one">${Math.round(forecast.main.temp_max)}°C</p>
