@@ -35,7 +35,13 @@ horas.innerHTML = `${day} ${month} ${date} ${year} ${hour}:${minutes}`;
 
 
 function formatHours(myHoras){
-  let hour = myHoras.getHours();
+  let myHoras = new Date();
+console.log(myHoras.getDate());
+
+let horas = document.querySelector(".time");
+
+let date = myHoras.getDate();
+let hour = myHoras.getHours();
 if (hour < 10) {
   hour = `0${hour}`;
 }
