@@ -103,10 +103,11 @@ currentLocationButton.addEventListener("click", getCurrentLocation);
 //forecast 
 function displayForecast(response){
 let forecastElement = document.querySelector("#forecast");
+forecastElement.innerHTML=null;
 let forecast = null;
 console.log(forecast);
 
-for (let index = 0; index < 3; index++){
+for (let index = 0; index < 4; index++){
 let forecast = response.data.list[index];
 forecastElement.innerHTML +=
  `<div class="col-3">
