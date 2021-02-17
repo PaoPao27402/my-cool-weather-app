@@ -35,14 +35,16 @@ horas.innerHTML = `${day} ${month} ${date} ${year} ${hour}:${minutes}`;
 
 
 function formatHours(myHoras){
-let hour = myHoras.getHours();
-if (hour < 10) {
-  hour = `0${hour}`;
-}
-let minutes = myHoras.getMinutes();
-if (hour < 10) {
-  hour = `0${minutes}`;
-}
+  let myHoras = new Date();
+  console.log(myHoras.getDate());
+  let hour = myHoras.getHours();
+  if (hour < 10) {
+    hour = `0${hour}`;
+  }
+  let minutes = myHoras.getMinutes();
+  if (hour < 10) {
+    hour = `0${minutes}`;
+  }
   return `${hours}:${minutes}`;
 }
 
@@ -139,7 +141,7 @@ forecastElement.innerHTML +=
 }
 
 
-
+//search engine
 function search(event) {
   event.preventDefault();
   let cityElement = document.querySelector("#city");
