@@ -34,8 +34,8 @@ horas.innerHTML = `${day} ${month} ${date} ${year} ${hour}:${minutes}`;
 
 
 
-function formatHours(myHoras){
- let myHoras = new Date();
+function formatHours(timeStamp){
+ let myHoras = new Date(timeStamp);
   console.log(myHoras.getDate());
   let hour = myHoras.getHours();
   if (hour < 10) {
