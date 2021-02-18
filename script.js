@@ -108,6 +108,7 @@ function searchLocation(position) {
   axios.get(apiUrl).then(showWeather);
 }
 
+//current location
 function getCurrentLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
