@@ -45,7 +45,7 @@ function formatHours(timestamp){
    if (hour < 10) {
    hour = `0${minutes}`;
    }
-   return `${hours}:${minutes}`;
+   return `${hour}:${minutes}`;
  }
 
 function showWeather(response) {
