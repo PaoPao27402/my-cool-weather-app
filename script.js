@@ -34,19 +34,19 @@ horas.innerHTML = `${day} ${month} ${date} ${year} ${hour}:${minutes}`;
 
 
 
-function formatHours(timeStamp){
- let myHoras = new Date(timeStamp);
-  console.log(myHoras.getDate());
-  let hour = myHoras.getHours();
-  if (hour < 10) {
-    hour = `0${hour}`;
-  }
-  let minutes = myHoras.getMinutes();
-  if (hour < 10) {
-  hour = `0${minutes}`;
-  }
-  return `${hours}:${minutes}`;
-}
+function formatHours(timestamp){
+  let myHoras = new Date(timestamp);
+   console.log(myHoras.getDate());
+   let hour = myHoras.getHours();
+   if (hour < 10) {
+     hour = `0${hour}`;
+   }
+   let minutes = myHoras.getMinutes();
+   if (hour < 10) {
+   hour = `0${minutes}`;
+   }
+   return `${hours}:${minutes}`;
+ }
 
 function showWeather(response) {
   console.log(response.data);
