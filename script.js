@@ -32,8 +32,7 @@ let months = [
 let month = months[myHoras.getMonth()];
 horas.innerHTML = `${day} ${month} ${date} ${year} ${hour}:${minutes}`;
 
-
-
+//time
 function formatHours(timestamp){
   let myHoras = new Date(timestamp);
    console.log(myHoras.getDate());
@@ -48,6 +47,43 @@ function formatHours(timestamp){
    return `${hour}:${minutes}`;
  }
 
+ //icons
+function getIcon(icon) {
+  let iconElement = "";
+  if (icon === "03d" || icon === "03n") {
+    iconElement = "fas fa-cloud";
+  } else if (icon === "04d") {
+    iconElement = "fas fa-cloud";
+  } else if (icon === "04n") {
+    iconElement = "fas fa-cloud";
+  } else if (icon === "01d") {
+    iconElement = "fas fa-sun";
+  } else if (icon === "01n") {
+    iconElement = "fas fa-moon";
+  } else if (icon === "02d") {
+    iconElement = "fas fa-cloud-sun";
+  } else if (icon === "02n") {
+    iconElement = "fas fa-cloud-moon";
+  } else if (icon === "09d") {
+    iconElement = "fas fa-cloud-showers-heavy";
+  } else if (icon === "09n") {
+    iconElement = "fas fa-cloud-showers-heavy";
+  } else if (icon === "10d") {
+    iconElement = "fas fa-cloud-rain";
+  } else if (icon === "10n") {
+    iconElement = "fas fa-cloud-rain";
+  } else if (icon === "13d") {
+    iconElement = "far fa-snowflake";
+  } else if (icon === "13n") {
+    iconElement = "far fa-snowflake";
+  } else if (icon === "50d") {
+    iconElement = "fas fa-stream";
+  } else if (icon === "50n") {
+    iconElement = "fas fa-stream";
+  }
+  return iconElement;
+}
+
 function showWeather(response) {
   console.log(response.data);
   document.querySelector("#city").innerHTML = response.data.name;
@@ -61,45 +97,14 @@ function showWeather(response) {
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
 
- //icon
+ //icon - main icon + forecast icons
  let iconElement = document.querySelector("#main-icon");
- if (
-   response.data.weather[0].icon === "03d" ||
-   response.data.weather[0].icon === "03n"
- ) {
-   iconElement.setAttribute("class", "fas fa-cloud");
- } else if (response.data.weather[0].icon === "04d") {
-   iconElement.setAttribute("class", "fas fa-cloud");
- } else if (response.data.weather[0].icon === "04n") {
-   iconElement.setAttribute("class", "fas fa-cloud");
- } else if (response.data.weather[0].icon === "01d") {
-   iconElement.setAttribute("class", "fas fa-sun");
- } else if (response.data.weather[0].icon === "01n") {
-   iconElement.setAttribute("class", "fas fa-moon");
- } else if (response.data.weather[0].icon === "02d") {
-   iconElement.setAttribute("class", "fas fa-cloud-sun");
- } else if (response.data.weather[0].icon === "02n") {
-   iconElement.setAttribute("class", "fas fa-cloud-moon");
- } else if (response.data.weather[0].icon === "09d") {
-   iconElement.setAttribute("class", "fas fa-cloud-showers-heavy");
- } else if (response.data.weather[0].icon === "09n") {
-   iconElement.setAttribute("class", "fas fa-cloud-showers-heavy");
- } else if (response.data.weather[0].icon === "10d") {
-   iconElement.setAttribute("class", "fas fa-cloud-rain");
- } else if (response.data.weather[0].icon === "10n") {
-   iconElement.setAttribute("class", "fas fa-cloud-rain");
- } else if (response.data.weather[0].icon === "13d") {
-   iconElement.setAttribute("class", "far fa-snowflake");
- } else if (response.data.weather[0].icon === "13n") {
-   iconElement.setAttribute("class", "far fa-snowflake");
- } else if (response.data.weather[0].icon === "50d") {
-   iconElement.setAttribute("class", "fas fa-stream");
- } else if (response.data.weather[0].icon === "50n") {
-   iconElement.setAttribute("class", "fas fa-stream");
- }   
+ iconElement.setAttribute("class", getIcon(response.data.weather[0].icon));
+
  celsiusTemperature = Math.round(response.data.main.temp);
 }
 
+//search
 function searchLocation(position) {
   let apiKey = "23d361c16cda8a10f140f972cd585469";
   let units = "metric";
@@ -118,7 +123,7 @@ let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
 //forecast 
-function displayForecast(response){
+function displayForecast(response) {
 let forecastElement = document.querySelector("#forecast");
 forecastElement.innerHTML=null;
 let forecast = null;
@@ -128,11 +133,11 @@ for (let index = 0; index < 4; index++){
 let forecast = response.data.list[index];
 forecastElement.innerHTML +=
  `<div class="col-3">
-                
+
 <div class="card-body">
 <h4 class="card-title"id="day-one">${formatHours(forecast.dt * 1000)}</h4>
   <h5 class="weather-icon">
-  ${`class/${forecast.weather[0].icon}`}</h5>
+  <i class="${getIcon(forecast.weather[0].icon)}"></i></h5>
   <p class="temp-day-one">${Math.round(forecast.main.temp_max)}°C</p>
 </div>
 </div>`;  
@@ -140,7 +145,6 @@ forecastElement.innerHTML +=
  }
 
 }
-
 
 //search engine
 function search(event) {
