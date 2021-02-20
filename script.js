@@ -132,7 +132,7 @@ forecastElement.innerHTML +=
 <div class="card-body">
 <h4 class="card-title"id="day-one">${formatHours(forecast.dt * 1000)}</h4>
   <h5 class="weather-icon">
-  <i class="fas fa-cloud"></i></h5>
+  ${`icons/${forecast.weather[0].icon}.svg`}</h5>
   <p class="temp-day-one">${Math.round(forecast.main.temp_max)}°C</p>
 </div>
 </div>`;  
