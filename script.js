@@ -182,6 +182,7 @@ function convertToCelsiusLink(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
+  navigator.geolocation.getCurrentLocation("search-form")
 }
 let celsiusTemperature = null;
 
