@@ -49,39 +49,33 @@ function formatHours(timestamp){
 
  //icons
 function getIcon(icon) {
-  let iconElement = "";
-  if (icon === "03d" || icon === "03n") {
-    iconElement = "fas fa-cloud";
-  } else if (icon === "04d") {
-    iconElement = "fas fa-cloud";
-  } else if (icon === "04n") {
-    iconElement = "fas fa-cloud";
-  } else if (icon === "01d") {
-    iconElement = "fas fa-sun";
-  } else if (icon === "01n") {
-    iconElement = "fas fa-moon";
-  } else if (icon === "02d") {
-    iconElement = "fas fa-cloud-sun";
-  } else if (icon === "02n") {
-    iconElement = "fas fa-cloud-moon";
-  } else if (icon === "09d") {
-    iconElement = "fas fa-cloud-showers-heavy";
-  } else if (icon === "09n") {
-    iconElement = "fas fa-cloud-showers-heavy";
-  } else if (icon === "10d") {
-    iconElement = "fas fa-cloud-rain";
-  } else if (icon === "10n") {
-    iconElement = "fas fa-cloud-rain";
-  } else if (icon === "13d") {
-    iconElement = "far fa-snowflake";
-  } else if (icon === "13n") {
-    iconElement = "far fa-snowflake";
-  } else if (icon === "50d") {
-    iconElement = "fas fa-stream";
-  } else if (icon === "50n") {
-    iconElement = "fas fa-stream";
+  if (icon === "03d" || icon === "03n" || icon === "04d" || icon === "04n") {
+    return "fas fa-cloud";
   }
-  return iconElement;
+  if (icon === "01d") {
+    return "fas fa-sun";
+  } 
+  if (icon === "01n") {
+    return "fas fa-moon";
+  } 
+  if (icon === "02d") {
+    return "fas fa-cloud-sun";
+  } 
+  if (icon === "02n") {
+    return "fas fa-cloud-moon";
+  } 
+  if (icon === "09d" || icon === "09n") {
+    return "fas fa-cloud-showers-heavy";
+  } 
+  if (icon === "10d" || icon === "10n") {
+    return "fas fa-cloud-rain";
+  } 
+  if (icon === "13d" || icon === "13n") {
+    return "far fa-snowflake";
+  } 
+  if (icon === "50d" || icon === "50n") {
+    return "fas fa-stream";
+  }
 }
 
 function showWeather(response) {
