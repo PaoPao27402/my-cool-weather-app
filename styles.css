@@ -1,140 +1,155 @@
 body {
-    text-align: center;
-  }
-  h1 {
-    font-size: 45px;
-    text-shadow: 1px 1px rgb(165, 164, 164);
-    color: #ffffff;
-    font-family: "Courier New", Courier, monospace;
-    text-align: center;
-  }
-  .time {
-    color: #ffffff;
-    text-shadow: 1px 1px rgb(165, 164, 164);
-    font-family: "Courier New", Courier, monospace;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 33px;
-  }
-  .temperature {
-    color: #ffffff;
-    font-size: 85px;
-    font-family: "Courier New", Courier, monospace;
-    text-shadow: 1px 1px rgba(0, 0, 0.2);
-  }
-  .units,
-  .fahrenheit-link {
-    font-size: 15px;
-    color: #ffffff;
-    line-height: 1;
-    position: relative;
-    top: -24px;
-  }
-  h3 {
-    color: #ffffff;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 30px;
-    margin-bottom: 8px;
-  }
-  .weather-icon{
-    display: block;
-    padding-right: 1px;
-    text-align: center;
-  }
-  .card-body{
-    margin-bottom: 35px;
-  }
-  .card-title {
-    color: #ffffff;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 16px;
-  }
-  p {
-    font-size: 15px;
-    color: #ffffff;
-  }
+  text-align: center;
+}
 
-  section {
-    background-image: url("background/purple day.gif");
-    margin: 0 auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 15px;
-    display: inline-block;
-    text-align: center;
-    box-shadow: 2px 2px 2px 2px rgba(188, 202, 200, 0.918);
-    margin: 15px;
-  }
-  form {
-    color: #ffffff;
-    font-size: 15px;
-    padding: 15px;
-  }
-  h5 {
-    color: #ffffff;
-  }
-  li {
-    list-style: none;
-    font-family: "Courier New", Courier, monospace;
-    color: #ffffff;
-  }
-  ul {
-    font-size: 17px;
-    padding: 0;
-    margin: 0;
-  }
-  .coded {
-    color: blueviolet;
-    padding: 8px;
-  }
-  .button {
-    width: auto;
-    background: #cfc8c8;
-    border-bottom: 2px inset rgba(0, 0, 0, 0.5);
-    border-left: 2px inset rgba(0, 0, 0, 0.5);
-    border-right: 2px inset rgba(255, 255, 255, 0.5);
-    border-top: 2px inset rgba(255, 255, 255, 0.5);
-    box-sizing: border-box;
-    color: white;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 15px;
-  }
-  .current {
-    font-family: "Courier New", Courier, monospace;
-    width: auto;
-    background: #8f8b8b;
-    border-bottom: 2px inset rgba(0, 0, 0, 0.5);
-    border-left: 2px inset rgba(0, 0, 0, 0.5);
-    border-right: 2px inset rgba(255, 255, 255, 0.5);
-    border-top: 2px inset rgba(255, 255, 255, 0.5);
-    box-sizing: border-box;
-    color: white;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 12px;
-    margin: 25px;
-    text-align: center;
-    
-  }
-  
-  .active{
+h1 {
+  font-size: 45px;
+  text-shadow: 1px 1px rgb(165, 164, 164);
   color: #ffffff;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.time {
+  color: #ffffff;
+  text-shadow: 1px 1px rgb(165, 164, 164);
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 33px;
+}
+
+.temperature {
+  color: #ffffff;
+  font-size: 85px;
+  font-family: "Courier New", Courier, monospace;
+  text-shadow: 1px 1px rgba(0, 0, 0.2);
+}
+
+.units,
+.fahrenheit-link {
+  font-size: 15px;
+  color: #ffffff;
+  line-height: 1;
+  position: relative;
+  top: -24px;
+}
+
+h3 {
+  color: #ffffff;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.weather-icon{
+  display: block;
+  padding-right: 1px;
+  text-align: center;
+}
+
+.card-body{
+  margin-bottom: 35px;
+}
+
+.card-title {
+  color: #ffffff;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+}
+
+p {
+  font-size: 15px;
+  color: #ffffff;
+}
+
+section {
+  background-image: url("background/purple day.gif");
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 2px 2px 2px 2px rgba(188, 202, 200, 0.918);
+  margin: 15px;
+}
+
+form {
+  color: #ffffff;
+  font-size: 15px;
+  padding: 15px;
+}
+
+h5 {
+  color: #ffffff;
+}
+
+li {
+  list-style: none;
+  font-family: "Courier New", Courier, monospace;
+  color: #ffffff;
+}
+
+ul {
+  font-size: 17px;
+  padding: 0;
+  margin: 0;
+}
+
+.coded {
+  color: blueviolet;
+  padding: 8px;
+}
+
+.button {
+  width: auto;
+  background: #cfc8c8;
+  border-bottom: 2px inset rgba(0, 0, 0, 0.5);
+  border-left: 2px inset rgba(0, 0, 0, 0.5);
+  border-right: 2px inset rgba(255, 255, 255, 0.5);
+  border-top: 2px inset rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  color: white;
   cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+}
+
+.current {
+  font-family: "Courier New", Courier, monospace;
+  width: auto;
+  background: #8f8b8b;
+  border-bottom: 2px inset rgba(0, 0, 0, 0.5);
+  border-left: 2px inset rgba(0, 0, 0, 0.5);
+  border-right: 2px inset rgba(255, 255, 255, 0.5);
+  border-top: 2px inset rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 12px;
+  margin: 25px;
+  text-align: center;  
+}
+
+.active{
+color: #ffffff;
+cursor: pointer;
+text-decoration: none;
+}
+
+.active:hover {
+  color: #a346ce;
+}
+
+.weak{
+  color: #ffffff;
   text-decoration: none;
-  }
-  .active:hover {
-    color: #a346ce;
-  }
+}
 
-  .weak{
-    color: #ffffff;
-    text-decoration: none;
-  }
-  .weak:hover{
-    color: #a346ce;
-  }
-
-
-  
+.weak:hover{
+  color: #a346ce;
+}

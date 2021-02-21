@@ -144,9 +144,8 @@ function displayForecast(response) {
 function search(event) {
   event.preventDefault();
   let cityElement = document.querySelector("#city");
-  let cityInput = document.querySelector("#search-form");
   let city = document.querySelector("#city-input").value;
-  cityElement.innerHTML = cityInput.value;
+  cityElement.innerHTML = city;
   getWeather(city, null, null);
 }
 
